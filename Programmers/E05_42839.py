@@ -1,13 +1,13 @@
-
 import itertools
 import math
 from itertools import product
+
 
 def solution(numbers):
     answer = 0
     newNumber = []
     for i in range(len(numbers)):
-        for j in itertools.permutations(numbers,i+1):
+        for j in itertools.permutations(numbers, i + 1):
             if j[0] != '0':
                 str_num = "".join(j)
                 if str_num != '1':
@@ -29,10 +29,9 @@ def solution(numbers):
         if cnt == 0:
             answers.append(num)
 
-
     answer = len(answers)
     print(answers)
     return answer
+
+
 print(solution("17"))
-
-

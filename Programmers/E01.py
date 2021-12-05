@@ -4,9 +4,9 @@ def solution(prices):
     answer = []
     Max = len(prices)
     while prices:
-        item = prices.popleft();
+        item = prices.popleft()
 
-        a = 0;
+        a = 0
         for i in prices:
             if item > i:
                 a = a+1
